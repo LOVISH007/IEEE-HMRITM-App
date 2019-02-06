@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HOME">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <ImageView
+        android:layout_marginTop="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="175dp">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to IEEE HMRITM Student Branch,one of the youngest Branch to reopened in HMR Institute of Technology and Management, New Delhi (IEEE Delhi Section).
+
+Here, at IEEE HMRITM Student Branch, we give each and every IEEE Student Member, a chance to shine one's personality by participating in various activities, workshops, competitions and much more. We give everyone a chance to organize his/her suggested workshop with full enthusiasm and energy so that Network Fulfilling Aim can be accomplished."
+        />
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

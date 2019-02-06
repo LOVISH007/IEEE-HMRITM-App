@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ABOUT_US">
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8851951463"
+        android:textSize="0dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO CONTACT US
+PRESS"
+        android:textSize="50dp"
+        android:gravity="center"
+        />
+
+    <ImageButton
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/imageCall"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_phone" />
+</RelativeLayout>
