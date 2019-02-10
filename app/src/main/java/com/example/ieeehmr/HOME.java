@@ -10,6 +10,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,20 +20,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.ViewSwitcher;
 
 public class HOME extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-
-    private static final int REQUEST_CALL =1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        ViewPager viewPager=findViewById(R.id.viewPager);
+        ImageAdapter adapter=new ImageAdapter(this);
+        viewPager.setAdapter(adapter);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -101,8 +104,8 @@ public class HOME extends AppCompatActivity
         else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-            Intent browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://sites.ieee.org/sb-hmritm/"));
-            startActivity(browserIntent);
+           Intent intent=new Intent(HOME.this,REACH_US.class);
+           startActivity(intent);
 
 
         }
@@ -114,7 +117,10 @@ public class HOME extends AppCompatActivity
     }
 
 
-
+    public void login(MenuItem item) {
+        Intent intent=new Intent(HOME.this,LOGIN.class);
+        startActivity(intent);
+    }
 
 }
 

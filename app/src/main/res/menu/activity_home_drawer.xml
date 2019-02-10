@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="HOME" />
         <item
             android:id="@+id/nav_gallery"
@@ -14,11 +14,11 @@
             android:title="BENIFITS OF IEEE" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/events_activities"
             android:title="EVENTS AND ACTIVITIES" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/about_us"
             android:title="ABOUT US" />
 
     </group>
