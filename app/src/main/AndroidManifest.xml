@@ -14,9 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LOGIN"></activity>
         <activity
-            android:name=".REACH_US"
-            android:parentActivityName=".HOME" />
-        <activity
             android:name=".ABOUT_US"
             android:parentActivityName=".HOME" />
         <activity

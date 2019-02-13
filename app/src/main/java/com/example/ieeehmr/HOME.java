@@ -104,9 +104,8 @@ public class HOME extends AppCompatActivity
         else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-           Intent intent=new Intent(HOME.this,REACH_US.class);
-           startActivity(intent);
-
+                Intent browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://sites.ieee.org/sb-hmritm/"));
+                startActivity(browserIntent);
 
         }
 
