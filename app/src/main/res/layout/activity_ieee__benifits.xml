@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IEEE_BENIFITS">
 
-</android.support.constraint.ConstraintLayout>
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/youtubePlayerView"
+        >
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:layout_marginTop="100dp"
+        android:foregroundGravity="center"
+        />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LETS SEE BENIFITS OF IEEE"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_marginTop="80dp"
+        />
+    <ScrollView
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="50dp"
+            android:text=" THESE ARE THE BENIFITS OF IEEE HMRITM"
+            />
+    </ScrollView>
+
+</RelativeLayout>
