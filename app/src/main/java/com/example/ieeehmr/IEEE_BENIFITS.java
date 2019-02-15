@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -43,6 +44,7 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
                 imageView.setVisibility(View.GONE);
                 textView.setText(" ");
                 youTubePlayerView.initialize(playerConfig.API_KEY,onInitializedListener);
+                Toast.makeText(IEEE_BENIFITS.this,"video is playing",Toast.LENGTH_SHORT).show();
             }
         });
 
