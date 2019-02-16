@@ -25,7 +25,7 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
         setContentView(R.layout.activity_ieee__benifits);
         imageView=findViewById(R.id.playButton);
         textView=findViewById(R.id.tv);
-        youTubePlayerView = (YouTubePlayerView)findViewById(R.id.youtubePlayerView);
+        youTubePlayerView = findViewById(R.id.youtubePlayerView);
         onInitializedListener= new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -44,7 +44,7 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
                 imageView.setVisibility(View.GONE);
                 textView.setText(" ");
                 youTubePlayerView.initialize(playerConfig.API_KEY,onInitializedListener);
-                Toast.makeText(IEEE_BENIFITS.this,"video is playing",Toast.LENGTH_SHORT).show();
+                Toast.makeText(IEEE_BENIFITS.this,"video is playing , MAKE SURE YOUR INTERNET CONNECTION IS ON",Toast.LENGTH_SHORT).show();
             }
         });
 
