@@ -84,7 +84,7 @@ public class HOME extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         this.item = item;
         int id = item.getItemId();
 
