@@ -16,7 +16,6 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
     ImageView imageView;
 
     YouTubePlayerView youTubePlayerView;
-    TextView textView;
     YouTubePlayer.OnInitializedListener onInitializedListener;
 
     @Override
@@ -24,7 +23,7 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ieee__benifits);
         imageView=findViewById(R.id.playButton);
-        textView=findViewById(R.id.tv);
+
         youTubePlayerView = findViewById(R.id.youtubePlayerView);
         onInitializedListener= new YouTubePlayer.OnInitializedListener() {
             @Override
@@ -42,7 +41,6 @@ public class IEEE_BENIFITS extends YouTubeBaseActivity {
             @Override
             public void onClick(View v) {
                 imageView.setVisibility(View.GONE);
-                textView.setText(" ");
                 youTubePlayerView.initialize(playerConfig.API_KEY,onInitializedListener);
                 Toast.makeText(IEEE_BENIFITS.this,"video is playing , MAKE SURE YOUR INTERNET CONNECTION IS ON",Toast.LENGTH_SHORT).show();
             }

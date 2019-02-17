@@ -32,23 +32,7 @@
 
     </android.support.v4.view.ViewPager>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp">
 
-        <TextView
-            android:textSize="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Welcome to IEEE HMRITM Student Branch,one of the youngest Branch to reopened in HMR Institute of Technology and Management, New Delhi (IEEE Delhi Section).
-
-Here, at IEEE HMRITM Student Branch, we give each and every IEEE Student Member, a chance to shine one's personality by participating in various activities, workshops, competitions and much more. We give everyone a chance to organize his/her suggested workshop with full enthusiasm and energy so that Network Fulfilling Aim can be accomplished."
-        />
-
-
-    </ScrollView>
 
 
 </android.support.design.widget.CoordinatorLayout>

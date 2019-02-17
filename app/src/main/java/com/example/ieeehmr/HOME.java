@@ -11,6 +11,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -25,20 +27,72 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HOME extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private MenuItem item;
 
+    List<ListItem> listItem;
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        RecyclerView recyclerView =  findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        //initializing the list
+        listItem = new ArrayList<>();
+
+        //adding some items to our list
+        listItem.add(
+                new ListItem(
+                        R.color.white,
+                        R.drawable.events,
+                        "EVENTS"
+                ));
+
+        listItem.add(
+                new ListItem(
+                        R.color.white,
+                        R.drawable.achivements,
+                        "ACHIVEMENTS"
+                ));
+
+        listItem.add(
+                new ListItem(
+                        R.color.white,
+                        R.drawable.projects,
+                        "PROJECTS"
+                ));
+
+        listItem.add(
+                new ListItem(
+                        R.color.white,
+                        R.drawable.activities,
+                        "ACTIVITIES"
+                ));
+
+
+
+        //creating recyclerview adapter
+        ListAdapter adapter = new ListAdapter(this, listItem);
+
+        //setting adapter to recyclerview
+        recyclerView.setAdapter(adapter);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ViewPager viewPager=findViewById(R.id.viewPager);
 
-        ImageAdapter adapter=new ImageAdapter(this);
-        viewPager.setAdapter(adapter);
+        ImageAdapter imageAdapter=new ImageAdapter(this);
+        viewPager.setAdapter(imageAdapter);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
