@@ -7,5 +7,9 @@
     <string name="nav_header_subtitle">hmritm.ieee2017@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">LOGIN</string>
+    <string name="lets_get_started">LETS GET STARTED</string>
+    <string name="IEEE_BASIC_BENIFITS">THESE ARER THE SOME OF MORE BENIFITS OF BEING A MEMBER OF IEEE.....</string>
+    <string name="ieee_benifits_header">IEEE BENIFITS HEADER</string>
+    <string name="play_image">PLAY IMAGE</string>
 
 </resources>

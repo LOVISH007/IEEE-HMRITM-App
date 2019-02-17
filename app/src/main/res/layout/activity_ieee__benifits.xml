@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,6 +7,7 @@
    android:orientation="vertical"
     >
     <ImageView
+        android:contentDescription="@string/ieee_benifits_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/b"
@@ -15,9 +15,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LETS GET STARTED..."
+        android:text="@string/lets_get_started"
         android:gravity="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         style="@style/Base.TextAppearance.AppCompat.Display3"
         />
 
@@ -39,10 +39,10 @@
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:id="@+id/youtubePlayerView"
-        android:outlineSpotShadowColor="@color/blue"
         >
     </com.google.android.youtube.player.YouTubePlayerView>
     <ImageView
+        android:contentDescription="@string/play_image"
         android:layout_gravity="center"
         android:id="@+id/playButton"
         android:layout_width="match_parent"
@@ -55,10 +55,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="THESE ARER THE SOME OF MORE
-                BENIFITS OF BEING A MEMBER OF IEEE.....
-"
-                android:textSize="50dp"
+                android:text="@string/IEEE_BASIC_BENIFITS"
+                android:textSize="50sp"
                 />
         </LinearLayout>
 
